@@ -67,13 +67,13 @@ margin-right: auto;
 margin-left: auto;
 ">
                 <h1 class=headertitle style="font-size: 40px; font-weight: bold;
-color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><br>
+color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br>
                     <span class="down"> Iam Srimuthu</span>
                 </h1>
                 <p class="header subtitle" style="font-size: 20px; opacity: 10px;font-weight:100px;">
                     FRONT END WEB DESIGNER</p> <br>
                 <button class="primarybutton"> Visit MY works</button>
-    </header><br>
+    </header>
 
     <section class="bio-section" id="container-text-center">
         <div class="container-text-center">
@@ -109,21 +109,31 @@ color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><
             position: relative;
             border: solid;
             color: black;
-            top: -20px;
+
             height: 550px;
-            width: 1200px;
-            left: 10px;
+            width: 1320px;
+
+            padding-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: first baseline;
+            align-items: center;
         }
 
         .container-text-center {
             border: solid;
             color: black;
             position: relative;
-            bottom: 5px;
-            left: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+
             height: 500px;
-            width: 1100px;
-            padding: 10px;
+            width: 1140px;
+            padding-right: 60px;
+            padding-bottom: 5px;
+
         }
 
         .about {
@@ -161,22 +171,22 @@ color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><
         <div class="container-text-center-1">
             <div class="row1">
                 <div class="c1">
-                    <img src="pencil-case.svg"class="icon" >
+                    <img src="pencil-case.svg" class="icon">
                     <h3 class="anime">Adipisicing</h3>
                     <p class="para">Labore velit culpa adipisci excepturi consequuntur itaque
                         in nam molestias dolorem iste quod.</p>
                 </div>
-                <div class="c2"> <img src ="responsive.svg" class="icon" >
+                <div class="c1"> <img src="responsive.svg" class="icon">
                     <h3 class="anime">Sapiente</h3>
                     <p class="para">Labore velit culpa adipisci excepturi consequuntur itaque
                         in nam molestias dolorem iste quod.</p>
                 </div>
-                <div class="c3"><img src="toolbox.svg " class="icon">
+                <div class="c1"><img src="toolbox.svg " class="icon">
                     <h3 class="anime">Placeat</h3>
                     <p class="para">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                         molestias dolorem iste quod.</p>
                 </div>
-                <div class="c4"><img src="analytics.svg" class="icon" >
+                <div class="c1"><img src="analytics.svg" class="icon">
                     <h3 class="anime"> lusto</h3>
                     <p class="para">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                         molestias dolorem iste quod.</p>
@@ -189,8 +199,11 @@ color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><
                 height: 900px;
                 border: solid;
                 color: black;
-                position: relative;
-                top: 10px;
+
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
 
             }
 
@@ -198,20 +211,26 @@ color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><
                 width: 1250px;
                 height: 700px;
                 position: relative;
-                top: 130px;
+                margin-top: 130px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
                 color: black;
-                left: 30px;
                 padding: 10px 10px;
                 border: solid;
             }
 
             .row1 {
-                position: absolute;
+                position: relative;
                 width: 1200px;
                 height: 650px;
-                top: 30px;
                 border: solid;
-                left: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
             }
 
             .c1 {
@@ -220,71 +239,557 @@ color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><
                 position: relative;
                 border: solid;
                 color: black;
-                top: 220px;
-                left: 4px;
-                
-            }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20px;
 
-            .c2 {
-                width: 240px;
-                height: 200px;
-                position: relative;
-                border: solid;
-                color: black;
-                top: 16px;
-                left: 300px;
-            }
 
-            .c3 {
-                width: 240px;
-                height: 200px;
-                position: relative;
-                border: solid;
-                color: black;
-                bottom: 190px;
-                left: 600px;
 
             }
 
-            .c4 {
-                width: 240px;
-                height: 200px;
-                position: relative;
-                border: solid;
-                color: black;
-                bottom: 395px;
-                left: 900px;
 
-            }
 
             .anime {
                 position: relative;
-                left: 80px;
-                top: 85px;
+
+
                 color: #594c8d;
                 margin-bottom: 8px;
-                
+
 
             }
-            
+
             .para {
                 position: relative;
-                top: 63px; text-align: center; font-size: 15px;
+                text-align: center;
+                font-size: 15px;
                 visibility: hidden;
             }
-             .c1:hover .para {
+
+            .c1:hover .para {
                 position: relative;
-                top: 63px; text-align: center; font-size: 15px;
-                visibility:visible; 
+                text-align: center;
+                font-size: 15px;
+                visibility: visible;
 
             }
-            .icon{
-                height:60px; width:60px; position: absolute;
-                        left: 80px;top: 40px; 
+
+            .icon {
+                height: 60px;
+                width: 60px;
+                position: relative;
+
             }
-            .c1:hover .icon{
-                height:40px; width:40px; position: absolute;
-                        left: 80px;top: 40px; align-items: center;
+
+            .c1:hover .icon {
+                height: 40px;
+                width: 40px;
+                align-items: center;
+
+            }
+        </style>
+    </section>
+    <section class="mysection" id="portfolio">
+        <div class="portcontainer">
+            <div class="portrow">
+                <div class="pc1"><img src="folio-1.jpg" class="folio">
+                    <span class="portfolio-card-overlay">
+                        <span class="p-c-f">
+                            <h4>Web Designing</h4>
+                            <p class="font-weight-normal">Category: Web Templates</p>
+                        </span>
+                    </span>
+                </div>
+                <div class="pc1"><img src="folio-2.jpg" class="folio"></div>
+                <div class="pc1"><img src="folio-3.jpg" class="folio"></div>
+
+            </div>
+        </div>
+        <style>
+            .mysection {
+                height: 1110px;
+                width: 1320px;
+                box-sizing: border-box;
+                padding: 70px 10px;
+
+                border: solid;
+                color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .portcontainer {
+                height: 75%;
+                width: 100%;
+
+
+
+                border: solid;
+                border-color: black;
+                display: block;
+                box-sizing: border-box;
+                line-height: 1.5;
+
+
+
+            }
+
+            .portrow {
+                height: 100%;
+                width: 100%;
+
+                border: solid;
+                color: black;
+                display: flex;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                margin-top: 140px;
+
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+
+            .pc1 {
+                height: 330px;
+                width: 330px;
+                border: solid;
+                color: black;
+                position: relative;
+
+            }
+
+            .folio {
+                position: relative;
+                height: 330px;
+                width: 330px;
+
+
+                cursor: pointer;
+
+            }
+
+            .fp {
+                position: relative;
+                align-items: center;
+
+            }
+
+            .ani-1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border: solid;
+                background-color: red;
+                color: #000000;
+                height: 300px;
+                width: 300px;
+            }
+
+            .p-c-f {
+                width: 100%;
+            }
+
+            .portfolio-card-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                background-image: linear-gradient(to top,
+                        #e1dfed 0,
+                        rgba(225, 223, 237, 0.7) 99%,
+                        rgba(225, 223, 237, 0.8) 100%);
+                transition: all, 0.3s;
+                overflow: hidden;
+                /* opacity: 1;
+                visibility: visible;
+                width: 100%;
+                height: 100%;
+                border-radius: 0; */
+
+                opacity: 0;
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+
+            }
+
+            .pc1:hover .portfolio-card-overlay {
+                opacity: 1;
+                visibility: visible;
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+
+
+            }
+        </style>
+    </section>
+    <section class=" pricing-sec" id="pricing">
+        <div class="pricontainer">
+            <p class="how">How Much I Charge ?</p>
+            <h class="price-cl">My Pricing</h6>
+                <div class="pri-row">
+                    <div class="pri-c1">
+                        <div class="pri-header"><img src="scooter.svg" class="pricing-img"></div>
+                        <div class="pri-body">
+                            <h1 class="pri-name"> Free</h1>
+                            <div class="pri-list">
+                                <p class="pri-let">provident dolorem </p>
+                                <p class="pri-let">accusamus reprehenderit</p>
+                                <p class="pri-let">accusamus reprehenderit</p>
+                                <p class="pri-let">accusamus reprehenderit</p>
+                                <p class="pri-let">quos neque</p>
+                                <p class="pri-let">fugiat quibusdam</p>
+                                <i class="close"> X </i><br>
+                                <i class="close"> X </i>
+                            </div>
+                        </div>
+                        <div class="pri-foot"><span class="mon"> $</span>
+                            <span class="mon"> 0.00/Month</span>
+                        </div>
+                        <button class="button-pricing">Subscribe</button>
+
+                    </div>
+                    <div class="pri-c1">
+                        <div class="pri-header"><img src="shipped.svg" class="pricing-img"></div>
+                        <div class="pri-body">
+                            <h1 class="pri-name">Basic</h1>
+                            <div class="pri-list">
+                                <p class="pri-let">provident dolorem </p>
+                                <p class="pri-let">accusamus reprehenderit</p>
+                                <p class="pri-let">quos neque</p>
+                                <p class="pri-let">fugiat quibusdam</p>
+                                <p class="pri-let">accusamus laboriosam</p>
+                                <i class="close"> X </i>
+                            </div>
+                        </div>
+                        <div class="pri-foot">
+                            <span class="mon"> $</span>
+                            <span class="mon"> 0.00/Month</span>
+                        </div>
+                        <button class="button-pricing">Subscribe</button>
+
+                    </div>
+                    <div class="pri-c1">
+                        <div class="pri-header"> <img src="startup.svg" class="pricing-img"></div>
+                        <div class="pri-body">
+                            <h1 class="pri-name">Premium</h1>
+                            <div class="pri-list">
+                                <p class="pri-let">provident dolorem </p>
+                                <p class="pri-let">accusamus reprehenderit</p>
+                                <p class="pri-let"> quos neque</p>
+                                <p class="pri-let">fugiat quibusdam</p>
+                                <p class="pri-let">accusamus laboriosam</p>
+                                <p class="pri-let">inventore omnis</p>
+                            </div>
+                        </div>
+                        <div class="pri-foot">
+                            <span class="mon"> $</span>
+                            <span class="mon"> 0.00/Month</span>
+                        </div>
+                        <button class="button-pricing">Subscribe</button>
+
+                    </div>
+                </div>
+
+        </div>
+        </div>
+        <style>
+            @font-face {
+                font-family: face;
+                src: url(BalooPaaji-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: name;
+                src: url(OpenSans-Italic-VariableFont_wdth,wght.ttf);
+            }
+
+            @font-face {
+                font-family: xterm;
+                src: url(themify-icons.css);
+            }
+
+            .pricing-sec {
+                height: 1100px;
+                width: 1320px;
+                box-sizing: border-box;
+                border: solid;
+                color: #000000;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+
+            }
+
+            .pricontainer {
+                height: 1000px;
+                width: 1290x;
+
+
+                border: solid;
+                color: black;
+                padding-right: 10px;
+                padding-left: 10px;
+                margin-left: auto;
+                margin-right: auto;
+
+                box-sizing: border-box;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+
+
+
+
+
+            }
+
+            .how {
+                font-size: 20px;
+                font-weight: 5rem;
+                font-family: name;
+
+            }
+
+
+
+            .pri-row {
+                height: 780px;
+                width: 1110px;
+                border: solid 1px;
+                color: black;
+                display: flex;
+
+
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .pri-c1 {
+                float: left;
+                width: 370px;
+                height: 750px;
+                border: solid 1px;
+
+                color: black;
+                padding: 15px 30px;
+            }
+
+            .pri-header {
+                height: 95px;
+                width: 300px;
+                border: solid;
+                color: #000000;
+            }
+
+            .pri-body {
+                width: 300px;
+                height: 380px;
+                border: solid;
+                color: #000000;
+                text-align: center;
+            }
+
+            .pri-name {
+                font-size: 33px;
+                text-align: center;
+                color: #544885;
+                font-family: face;
+
+                text-align: center;
+
+
+            }
+
+            .pri-list {
+                position: relative;
+                bottom: 30px;
+                width: 300px;
+                height: 300px;
+                border: solid;
+                color: #000000;
+            }
+
+            .pri-foot {
+                width: 300px;
+                height: 150px;
+                border: solid;
+                color: black;
+                text-align: center;
+
+
+
+
+            }
+
+            .mon {
+                position: relative;
+                font-size: 40px;
+                color: black;
+                top: 60px;
+
+
+
+            }
+
+            .button-pricing {
+                height: 40px;
+                width: 115px;
+                font-size: 1rem;
+                position: relative;
+                padding: 12px 6px;
+                border: 1px 1px;
+                margin-top: 10px;
+                cursor: pointer;
+                display: inline-block;
+                color: #fff;
+                background-color: #695aa6;
+                left: 90px;
+
+            }
+
+            .pricing-img {
+                position: relative;
+
+                height: 70px;
+                width: 70px;
+                left: 95px;
+            }
+
+            .pri-let {
+                letter-spacing: 0.6px;
+                font-family: name;
+
+            }
+
+            .close {
+                font-family: xterm;
+                color: red;
+                font-size: 25x;
+            }
+        </style>
+
+    </section>
+    <section class="section-hire" id="hire">
+        <div class=" cont-blog">
+            <div class=" row-blog">
+                <div class=" r-c1">
+                    <h3 class="blog-head"> Want to work with me?</h3>
+                    <p class="blog-para"> Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="r-c2">
+                    <button class="hire-blog"> Hire me</button>
+                </div>
+            </div>
+        </div>
+        <style>
+            @font-face {
+                font-family: face;
+                src: url(BalooPaaji-Regular.ttf);
+            }
+
+            .section-hire {
+                height: 220px;
+                width: 1330px;
+                border: solid;
+                color: #000000;
+                background-color: #695aa6;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                ;
+
+            }
+
+            .cont-blog {
+                height: 100px;
+                width: 1160;
+                border: solid;
+                color: black;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 15px;
+
+            }
+
+            .row-blog {
+                height: 100px;
+                width: 1120px;
+                border: solid;
+                color: #000000;
+                display: flex;
+                justify-content: center;
+            }
+
+            .r-c1 {
+                float: left;
+                width: 39%;
+                height: 90%;
+                border: solid;
+                text-align: left;
+                letter-spacing: .6px;
+            }
+
+            .r-c2 {
+                float: right;
+                width: 60%;
+                height: 90%;
+                border: solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .blog-head {
+                border-color: #000000;
+                color: #fff;
+                font-size: 17px;
+                font-family: face;
+
+            }
+
+            .blog-para {
+                color: whitesmoke;
+                font-size: medium;
+
+            }
+
+            .hire-blog {
+                border-radius: 8px;
+                cursor: pointer;
+                box-sizing: border-box;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                padding-right: 16px;
+                display: inline-block;
+                appearance: button;
+                height: 50px;
+                width: 120px;
+                color: black;
+                font-size: larger;
+                font-family: face;
+                background-color: white;
+                border-color: #000000;
+            }
+
+            .hire-blog:hover {
+                background-color: #f8f9fa;
+                border-color: #f8f9fa;
+                overflow: visible;
             }
         </style>
     </section>
@@ -323,116 +828,316 @@ color:rgb(red, green, blue); font-family:face; " "><span class=" up">HI!</span><
 
             </div>
         </div>
+
+        <style>
+            .section {
+                border: solid;
+                color: black;
+
+                height: 800px;
+                width: 1320px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-test {
+                border: solid;
+                color: black;
+                height: 650px;
+                width: 1250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            .row {
+                border: solid;
+                color: black;
+                height: 400px;
+                width: 1000px;
+
+
+                padding: 40px 30px;
+            }
+
+            .col1 {
+                border: solid;
+                color: black;
+                height: 300px;
+                width: 400px;
+                position: relative;
+                left: 40px;
+                top: 70px;
+
+            }
+
+            .col2 {
+                border: solid;
+                color: black;
+                height: 300px;
+                width: 400px;
+                position: relative;
+                left: 540px;
+                top: -235px;
+            }
+
+            .imageholder1 {
+
+                position: relative;
+                bottom: 415px;
+            }
+
+            .imageholder2 {
+                position: relative;
+                width: 90px;
+                height: 90px;
+                bottom: 505px;
+                left: 500px;
+
+            }
+
+            .text1 {
+                font-size: 20px;
+                position: relative;
+                left: 20px;
+                top: 15px;
+            }
+
+            .text2 {
+                font-size: 20px;
+                position: relative;
+                left: 20px;
+                top: 15px;
+            }
+
+            .name1 {
+                position: relative;
+                left: 50px;
+                top: 20px;
+                color: rgb(105, 90, 166);
+                font-weight: 500px;
+            }
+
+            .name2 {
+                position: relative;
+                left: 50px;
+                top: 20px;
+                color: #695aa6;
+                font-weight: 500px;
+            }
+
+            .section-subtitle {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .section-title {
+                color: #594c8d;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
     </section>
+    <section class="blog-section" id="blog">
+        <div class="container-blog">
+            <div class="blog-card1">
+                <img src="img-1.jpg" class="img1">
+                <h1 class="imgtext">Consectetur adipisicing elit
+                </h1>
+                <P><a href="" class="admin" style="color: dimgray;">By admin:</a>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                    <i class="fas fa-heart" style="color:pink">"234"</i>
+                    <i style='font-size:24px' class='far'>&#xf075;</i>
+                <p class="blog-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
+                    delectus voluptates,
+                    repellat ipsum culpa id deleniti.
+                    Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+                <p1 class="blog-p">Necessitatibus nihil impedit! Ex nisi eveniet, dolor
+                    aliquid consequuntur repudiandae. </p1>
+                <p2 class="blog-s" style=" font-size: 20px;
+            
+                             letter-spacing: 1px;
+                             line-height:2.;">Magnam in repellat enim harum omnis aperiam! Explicabo illo,
+                    commodi, dolor blanditiis cupi.ditate harum nisi vero accusamus laudantium
+                    voluptatibus dolores quae
+                    obcaecati.</p2>
+                <p><a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick " class="link">
+                        Readmore >>
+                    </a></p>
+            </div>
+
+
+            <div class="blog-card1"></div>
+        </div>
+
+
+    </section>
+
     <style>
-        .section {
+        @font-face {
+            font-family: face;
+            src: url(BalooPaaji-Regular.ttf);
+        }
+
+        .blog-section {
+            border: solid;
+            color: #000000;
+            height: 1110px;
+            width: 1300px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+
+        }
+
+        .container-blog {
             border: solid;
             color: black;
-            position: relative;
-            height: 800px;
-            width: 1320px;
-            top: 700px;
+            height: 75%;
+            width: 95%;
+            padding: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
         }
 
-        .container-test {
+        .blog-card1 {
             border: solid;
             color: black;
-            height: 650px;
-            width: 1250px;
-            position: relative;
-            left: 25px;
-            top: 124px;
+            height: 45%;
+            width: 100%;
         }
 
-        .row {
-            border: solid;
-            color: black;
-            height: 400px;
-            width: 1000px;
-            position: relative;
-            left: 85px;
-            top: 5px;
-            padding: 40px 30px;
+        .img1 {
+            float: left;
+            height: 100%;
+            width: 35%;
+            padding-right: 40px;
         }
 
-        .col1 {
-            border: solid;
-            color: black;
-            height: 300px;
-            width: 400px;
-            position: relative;
-            left: 40px;
-            top: 70px;
-
-        }
-
-        .col2 {
-            border: solid;
-            color: black;
-            height: 300px;
-            width: 400px;
-            position: relative;
-            left: 540px;
-            top: -235px;
-        }
-
-        .imageholder1 {
-
-            position: relative;
-            bottom: 415px;
-        }
-
-        .imageholder2 {
-            position: relative;
-            width: 90px;
-            height: 90px;
-            bottom: 505px;
-            left: 500px;
-
-        }
-
-        .text1 {
+        .imgtext {
             font-size: 20px;
-            position: relative;
-            left: 20px;
-            top: 15px;
-        }
-
-        .text2 {
-            font-size: 20px;
-            position: relative;
-            left: 20px;
-            top: 15px;
-        }
-
-        .name1 {
-            position: relative;
-            left: 50px;
-            top: 20px;
-            color: rgb(105, 90, 166);
-            font-weight: 500px;
-        }
-
-        .name2 {
-            position: relative;
-            left: 50px;
-            top: 20px;
-            color: #695aa6;
-            font-weight: 500px;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .section-title {
+            text-indent: 5px;
             color: #594c8d;
-            font-size: 30px;
-            text-align: center;
+            line-height: 4.0;
+            font-family: face;
+        }
+
+        .blog-p {
+            font-size: 20px;
+
+            letter-spacing: 2px;
+            line-height: 1.;
+
         }
     </style>
+    <form class="contact-form">
+        <div class="form-row">
 
+            <input type="text" id="your_name" name="your name" placeholder="Your Name" class="form-name">
+
+
+            <input type="email" id="email" name="mail" placeholder="Mail" class="form-mail">
+
+<br>
+<br>
+
+            <input type="text" id="Message" name="message" placeholder="write something" class="form-msg">
+            <button type="button" class="form-button">Send Message</button>
+        </div>
+        
+
+    </form>
+    <style>
+        .form-button{
+            border-radius: 25px;
+            height:40px;
+            width:150px;
+            color:blueviolet;
+
+            
+            border-color: #695aa6;
+        }
+        .form-button:hover{
+            color: #fff;
+            background-color: #594c8d;
+            border-color: #544885;
+            cursor: pointer;
+        }
+        .form-name {
+            border: solid 2px;
+            color: gray;
+font-size: 20px;
+            height: 50px;
+            width: 400px;
+        }
+
+        .form-mail {
+            border: solid 2px;
+            color: gray;
+            display: block;
+font-size: 20px;
+            height: 50px;
+            width: 400px;
+
+        }
+
+        .form-msg {
+            border: solid 2px;
+            color: gray;
+            height: 200px;
+            width: 800px;
+            text-align: center;
+            font-size: 20px;
+
+
+        }
+
+        .contact-form {
+            border: solid;
+            color: black;
+            height: 700px;
+            width: 1270px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+
+        .form-row {
+            border: solid;
+            color: black;
+            height: 80%;
+            width: 75%;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+            
+            align-items: center;
+        }
+    </style>
 
 </body>
 
