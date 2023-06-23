@@ -3,6 +3,76 @@
 
 <body>
     <title>Frontend webdesigner</title>
+    <nav class="nav-bar" data-spy="affix" data-offset="20">
+        <div class="nav-cont">
+            <a class="logo" href="#">Meyawo</a>
+            <ul class="nav-show">
+                <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Testmonial">Testmonial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+            </ul>
+            <style>
+                @font-face {
+                    font-family: face;
+                    src: url(BalooPaaji-Regular.ttf);
+                }
+
+                .nav-bar {
+                    border: solid;
+                    color: #000000;
+                    height: 100px;
+                    width: 1320px;
+
+                }
+
+                .nav-cont {
+                    border: solid;
+                    color: black;
+                    width: 90%;
+                    height: 100%;
+                    margin-left: 23px;
+
+                    padding-left: 50px;
+                    padding-right: 50px;
+
+                }
+
+                .logo {
+                    font-family: face;
+                    font-size: 30px;
+                    color: #695aa6
+                }
+
+                .nav-show {
+                    font-family: face;
+                    font-size: 15px;
+                    color: #695aa6;
+                }
+
+                .nav-link {
+                    font-family: face;
+                    font-size: 15px;
+                    color: black;
+
+                }
+            </style>
+            <script>
+
+                window.onscroll = function () { scrollFunction() };
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        document.getElementById("navbar").style.top = "-50px";
+                    }
+                }</script>
+        </div>
+    </nav>
 
     <style>
         @font-face {
@@ -169,6 +239,9 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
 
     <section class="section-service" id="service">
         <div class="container-text-center-1">
+            <div class="heading">
+            <p class="sect-title" style="color:black; opacity:6;">What I DO?</p>
+            <h4 class="sect-head" style="color:#695aa6; font-family: face; font-size: 30px;">Service</h4></div>
             <div class="row1">
                 <div class="c1">
                     <img src="pencil-case.svg" class="icon">
@@ -194,6 +267,29 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
             </div>
         </div>
         <style>
+            .heading{
+                position:relative;
+                bottom:10px;
+                left:400px;
+                height:200px;
+                width:300px;
+                border:solid;
+                color:black;
+                text-align: center;
+            }
+            /* .sect-head{
+                position:relative;
+                bottom:200px;
+                left:600px;
+                font-size:40px;
+            }
+            .sect-title{
+                position:relative;
+                bottom:250px;
+                left: 650px;
+                font-size: 20px; */
+            
+
             .section-service {
                 width: 1320px;
                 height: 900px;
@@ -204,19 +300,18 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                
 
             }
 
             .container-text-center-1 {
-                width: 1250px;
-                height: 700px;
-                position: relative;
+                height:80%;
+                width:90%;
                 margin-top: 130px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
-                align-items: center;
-
+               
                 color: black;
                 padding: 10px 10px;
                 border: solid;
@@ -224,8 +319,8 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
 
             .row1 {
                 position: relative;
-                width: 1200px;
-                height: 650px;
+                width: 100%;
+                height: 70%;
                 border: solid;
                 display: flex;
                 flex-direction: row;
@@ -293,23 +388,70 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
     </section>
     <section class="mysection" id="portfolio">
         <div class="portcontainer">
+            <div class="port-head">
+                <p class="para-port">What I Did?</p>
+                <h3 class="p--head" >Portfolio<h3>
+            </div>
             <div class="portrow">
                 <div class="pc1"><img src="folio-1.jpg" class="folio">
                     <span class="portfolio-card-overlay">
                         <span class="p-c-f">
-                            <h4>Web Designing</h4>
+                            <h4 class="anime-text">Web Designing</h4>
                             <p class="font-weight-normal">Category: Web Templates</p>
                         </span>
                     </span>
                 </div>
-                <div class="pc1"><img src="folio-2.jpg" class="folio"></div>
-                <div class="pc1"><img src="folio-3.jpg" class="folio"></div>
+                <div class="pc1"><img src="folio-2.jpg" class="folio">
+                    <span class="portfolio-card-overlay">
+                        <span class="p-c-f">
+                            <h4 class="anime-text">Web Designing</h4>
+                            <p class="font-weight-normal">Category: Web Templates</p>
+                        </span>
+                    </span>
+                </div>
+                <div class="pc1"><img src="folio-3.jpg" class="folio">
+                    <span class="portfolio-card-overlay">
+                        <span class="p-c-f">
+                            <h4 class="anime-text">Web Designing</h4>
+                            <p class="font-weight-normal">Category: Web Templates</p>
+                        </span>
+                    </span>
+                </div>
 
             </div>
         </div>
         <style>
+            @font-face {
+                font-family: face;
+                src: url(BalooPaaji-Regular.ttf);
+            }
+            .p--head{
+                font-size: 30px;
+                font-family: face;
+                color: #695aa6;
+            } 
+             .port-head{
+            border:solid;
+            color:black;
+            height:150px;
+            width:300px; 
+            position: relative;
+            top:30px;
+            left:400px;
+            text-align: center;
+            
+             }
+            
+
+            .anime-text {
+                font-family: face;
+                font-size: 30px;
+
+                color: #695aa6;
+            }
+
             .mysection {
-                height: 1110px;
+                height: 1000px;
                 width: 1320px;
                 box-sizing: border-box;
                 padding: 70px 10px;
@@ -319,10 +461,11 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                
             }
 
             .portcontainer {
-                height: 75%;
+                height: 100%;
                 width: 100%;
 
 
@@ -338,7 +481,7 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
             }
 
             .portrow {
-                height: 100%;
+                height: 50%;
                 width: 100%;
 
                 border: solid;
@@ -433,8 +576,9 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
     </section>
     <section class=" pricing-sec" id="pricing">
         <div class="pricontainer">
+            <div class="pri-head">
             <p class="how">How Much I Charge ?</p>
-            <h class="price-cl">My Pricing</h6>
+            <h class="price-cl">My Pricing</h6></div>
                 <div class="pri-row">
                     <div class="pri-c1">
                         <div class="pri-header"><img src="scooter.svg" class="pricing-img"></div>
@@ -516,6 +660,20 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
                 font-family: xterm;
                 src: url(themify-icons.css);
             }
+            .pri-head{
+                height:150px;
+                width:300px;
+                border:solid;
+                color:black;
+                position:relative;
+                left:370px;
+                text-align: center;
+            }
+            .price-cl{
+                font-family: face;
+                font-size: 30px;
+                color: #695aa6;
+            }
 
             .pricing-sec {
                 height: 1100px;
@@ -556,7 +714,7 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
             }
 
             .how {
-                font-size: 20px;
+                font-size: 15px;
                 font-weight: 5rem;
                 font-family: name;
 
@@ -683,6 +841,10 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
     </section>
     <section class="section-hire" id="hire">
         <div class=" cont-blog">
+            <div class="cont-head1">
+                <p class="cont-para">Recent Posts?</p>
+                <h4 class="cont-head">Blog</h4>
+            </div>
             <div class=" row-blog">
                 <div class=" r-c1">
                     <h3 class="blog-head"> Want to work with me?</h3>
@@ -697,6 +859,26 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
             @font-face {
                 font-family: face;
                 src: url(BalooPaaji-Regular.ttf);
+            }
+            .cont-para{
+                font-size:20px;
+                opacity:0.60;
+            }
+            .cont-head{
+                font-family: face;
+                font-size:30px;
+                color:#695aa6;
+            }
+            .cont-head1{
+                height:120px;
+                width:300px;
+                border: solid;
+                color:#000000;
+                position: relative;
+                top:980px;
+                left:400px;
+                text-align: center;
+
             }
 
             .section-hire {
@@ -947,11 +1129,12 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
                 <img src="img-1.jpg" class="img1">
                 <h1 class="imgtext">Consectetur adipisicing elit
                 </h1>
-                <P><a href="" class="admin" style="color: dimgray;">By admin:</a>
+                <P><a href="#" class="admin" style="color: dimgray;">By:admin</a>
                     <link rel="stylesheet"
                         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
                     <i class="fas fa-heart" style="color:pink">"234"</i>
                     <i style='font-size:24px' class='far'>&#xf075;</i>
+                </P>
                 <p class="blog-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
                     delectus voluptates,
                     repellat ipsum culpa id deleniti.
@@ -971,7 +1154,31 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
             </div>
 
 
-            <div class="blog-card1"></div>
+            <div class="blog-card1">
+                <img src="img-2.jpg" class="img1">
+                <h1 class="imgtext">Explicabo illo</h1>
+                <p><a href="#" class="admin" style="color:dimgray;">BY:admin</a>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+                    <i class="fas fa-heart" style="color:pink">"436"</i>
+                    <i style='font-size:24px' class='far'>&#xf075;</i>
+                </p>
+                <p class="blog-p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum
+                    enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro
+                    quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis
+                    praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi
+                    corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis
+                    quod, et deleniti cupiditate reiciendis harum facere,
+                    delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.
+                </p>
+                <p>
+                    <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick " class="link">
+                        Readmore >>
+                    </a>
+                </p>
+
+
+            </div>
         </div>
 
 
@@ -1026,15 +1233,30 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
             padding-right: 40px;
         }
 
+        .img2 {
+            float: left;
+            height: 100%;
+            width: 35%;
+            padding-right: 40px;
+
+        }
+
         .imgtext {
             font-size: 20px;
             text-indent: 5px;
             color: #594c8d;
-            line-height: 4.0;
+            line-height: 1.0;
             font-family: face;
         }
 
         .blog-p {
+            font-size: 20px;
+
+            letter-spacing: 2px;
+            line-height: 1.;
+        }
+
+        .blog-p1 {
             font-size: 20px;
 
             letter-spacing: 2px;
@@ -1050,35 +1272,37 @@ color:rgb(red, green, blue); font-family:face; "><span class=" up">HI!</span><br
 
             <input type="email" id="email" name="mail" placeholder="Mail" class="form-mail">
 
-<br>
-<br>
+            <br>
+            <br>
 
             <input type="text" id="Message" name="message" placeholder="write something" class="form-msg">
             <button type="button" class="form-button">Send Message</button>
         </div>
-        
+
 
     </form>
     <style>
-        .form-button{
+        .form-button {
             border-radius: 25px;
-            height:40px;
-            width:150px;
-            color:blueviolet;
+            height: 40px;
+            width: 150px;
+            color: blueviolet;
 
-            
+
             border-color: #695aa6;
         }
-        .form-button:hover{
+
+        .form-button:hover {
             color: #fff;
             background-color: #594c8d;
             border-color: #544885;
             cursor: pointer;
         }
+
         .form-name {
             border: solid 2px;
             color: gray;
-font-size: 20px;
+            font-size: 20px;
             height: 50px;
             width: 400px;
         }
@@ -1087,7 +1311,7 @@ font-size: 20px;
             border: solid 2px;
             color: gray;
             display: block;
-font-size: 20px;
+            font-size: 20px;
             height: 50px;
             width: 400px;
 
@@ -1098,7 +1322,7 @@ font-size: 20px;
             color: gray;
             height: 200px;
             width: 800px;
-            text-align: center;
+            text-align: initial;
             font-size: 20px;
 
 
@@ -1114,7 +1338,7 @@ font-size: 20px;
             margin-top: 10px;
             margin-left: 10px;
             margin-right: 10px;
-            margin-bottom: 10px;
+
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -1132,13 +1356,206 @@ font-size: 20px;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            
-            
-            
-            align-items: center;
+
+
+
+
         }
     </style>
 
+
+    <div class="container-footer">
+        <footer class="footer">
+            <p class="mb" style="font-size: 20px;">Copyright
+                <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
+                <a href="http://www.devcrud.com" class="devcrud" target="_blank" style="
+            color:darkslategrey">Devcrud</a>
+            </p>
+            <div class="social-link">
+
+                <button type="button" class="f-button">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <i style="font-size:24px" class="fa">&#xf09a;</i>
+                </button>
+                <button type="button" class="t-twitter">
+                    <meta name='viewport' content='width=device-width, initial-scale=1'>
+                    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+                    <meta name='viewport' content='width=device-width, initial-scale=1'>
+                    <i style='font-size:24px' class='fab'>&#xf099;</i>
+                </button>
+                <button type="button" class="g-button">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <i style="font-size:24px" class="fa">&#xf0d5;</i>
+                </button>
+                <button type="button" class="pin-button">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <i style="font-size:24px" class="fa">&#xf0d2;</i>
+                </button>
+                <button type="button" class="insta-button">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <i style="font-size:24px" class="fa">&#xf16d;</i>
+                </button>
+                <button type="button" class="rss">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <i style="font-size:24px" class="fa">&#xf09e;</i>
+                </button>
+            </div>
+
+        </footer>
+    </div>
+    <style>
+        .social-link {
+            border: solid 2px;
+            color: #e1dfed;
+            height: 30px;
+            width: 400px;
+            padding-top: 10px;
+            gap: 5px;
+
+            border: solid 0.5px;
+            color: #e1dfed;
+            height: 30px;
+            width: 1200px;
+
+            padding-right: 10px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+        }
+
+        .rss {
+            border-radius: 50%;
+            color: darkslategrey;
+            height: 50px;
+            width: 50px;
+
+
+            border-color: darkslategrey;
+        }
+
+        .rss:hover {
+            color: #fff;
+            background-color: #695aa6;
+            cursor: pointer;
+        }
+
+
+        .insta-button {
+            border-radius: 50%;
+            color: darkslategrey;
+            height: 50px;
+            width: 50px;
+
+
+            border-color: darkslategrey;
+        }
+
+        .insta-button:hover {
+            color: #fff;
+            background-color: #695aa6;
+            cursor: pointer;
+        }
+
+        .pin-button {
+            border-radius: 50%;
+            color: darkslategrey;
+            height: 50px;
+            width: 50px;
+
+            border-color: darkslategrey;
+        }
+
+        .pin-button:hover {
+            color: #fff;
+            background-color: #695aa6;
+            cursor: pointer;
+        }
+
+        .g-button {
+            border-radius: 50%;
+            color: darkslategrey;
+            height: 50px;
+            width: 50px;
+
+            border-color: darkslategrey;
+        }
+
+        .g-button:hover {
+            color: #fff;
+            background-color: #695aa6;
+            cursor: pointer;
+        }
+
+        .t-twitter {
+            border-radius: 50%;
+            color: darkslategrey;
+            height: 50px;
+            width: 50px;
+
+            border-color: darkslategrey;
+        }
+
+        .t-twitter:hover {
+            color: #fff;
+            background-color: #695aa6;
+            cursor: pointer;
+        }
+
+        .f-button {
+            border-radius: 50%;
+            color: darkslategrey;
+            height: 50px;
+            width: 50px;
+
+            border-color: darkslategrey;
+        }
+
+        .f-button:hover {
+            color: #fff;
+            background-color: #695aa6;
+            cursor: pointer;
+        }
+
+
+
+        /* <!--   .container-footer {
+            border: solid;
+            color: #000000;
+            height: 200px;
+            width: 1320px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            display:flex;
+            flex-direction: row;
+            justify-content: right;
+
+        }
+
+    -->  */
+        .footer {
+            position: relative;
+            bottom: 65px;
+            margin-left: 60px;
+        }
+
+        .mb {
+            position: relative;
+            top: 70px;
+            padding-left: 50px;
+        }
+    </style>
 </body>
 
 </html>
